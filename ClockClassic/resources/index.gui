@@ -72,7 +72,7 @@
     <g id="seconds" transform="translate(50%,50%)">
         <line x1="0" x2="0" y1="8%" y2="-50%+3" fill="red" stroke-width="2" class="color1"/>
     </g>
-    <text id="mydate" x="75%" y="16" fill="white" font-size="21" text-length="20">
+    <text id="mydate" x="72%" y="16" fill="white" font-size="21" text-length="20">
       50%
     </text>
     <text id="mytime" x="77%" y="37" fill="white" font-size="21" text-length="20">
