@@ -1,0 +1,26 @@
+{
+  "fitbit": {
+    "appUUID": "5cd3d22e-5ff8-47dd-9cae-7d8ffa0d82dc",
+    "appType": "clockface",
+    "appDisplayName": "ClockClassic",
+    "iconFile": "resources/icon.png",
+    "wipeColor": "",
+    "requestedPermissions": [
+      "access_activity",
+      "access_heart_rate",
+      "access_exercise"
+    ],
+    "buildTargets": [
+      "higgs"
+    ],
+    "i18n": {
+      "en": {
+        "name": "ClockClassic"
+      }
+    },
+    "defaultLanguage": "en-US"
+  },
+  "devDependencies": {
+    "@fitbit/sdk": "~4.1.0"
+  }
+}

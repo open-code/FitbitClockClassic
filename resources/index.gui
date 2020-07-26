@@ -1,0 +1,94 @@
+<svg viewport-fill="black">
+    <defs>
+        <symbol id="hour_marker_one">
+            <g id="container">
+                <line x1="0" x2="0" y1="-47%" y2="-50%+5" fill="grey" stroke-width="5"/>
+                <line x1="0" x2="0" y1="-47%" y2="-45%+5" fill="grey" stroke-width="5"/>
+            </g>
+            <g id="container1">
+                <line x1="0" x2="0" y1="-37%" y2="-50%+5" fill="grey" stroke-width="6"/>
+                <line x1="0" x2="0" y1="-37%" y2="-45%+5" fill="grey" stroke-width="6"/>
+            </g>
+        </symbol>
+        <symbol id="hour_marker_quarter">
+            <g id="container">
+                <use fill="inherit" href="#hour_marker_one"/>
+                <use fill="inherit" href="#hour_marker_one">
+                    <set attributeName="transform" href="container" to="rotate(30)"/>
+                </use>
+                <use fill="inherit" href="#hour_marker_one">
+                    <set attributeName="transform" href="container" to="rotate(60)"/>
+                </use>
+            </g>
+        </symbol>
+        <symbol id="hour_marker">
+            <use fill="inherit" href="#hour_marker_quarter"/>
+            <use fill="inherit" href="#hour_marker_quarter">
+                <set attributeName="transform" href="container" to="rotate(90)"/>
+            </use>
+            <use fill="inherit" href="#hour_marker_quarter">
+                <set attributeName="transform" href="container" to="rotate(180)"/>
+            </use>
+            <use fill="inherit" href="#hour_marker_quarter">
+                <set attributeName="transform" href="container" to="rotate(270)"/>
+            </use>
+        </symbol>
+        <symbol id="min_hand">
+            <line x1="0" x2="0" y1="-25%" y2="-50%+6" fill="black" stroke-width="10"/>
+            <line x1="0" x2="0" y1="-25%" y2="-6%-6" fill="black" stroke-width="10"/>
+            <line x1="0" x2="0" y1="-25%" y2="-50%+6" fill="inherit" stroke-width="8"/>
+            <line x1="0" x2="0" y1="-25%" y2="-6%-6" fill="inherit" stroke-width="8"/>
+        </symbol>
+        <symbol id="hour_hand">
+            <line x1="0" x2="0" y1="-25%" y2="-29%" fill="black" stroke-width="14"/>
+            <line x1="0" x2="0" y1="-25%" y2="-6%-6" fill="black" stroke-width="14"/>
+            <line x1="0" x2="0" y1="-25%" y2="-29%" fill="inherit" stroke-width="12"/>
+            <line x1="0" x2="0" y1="-25%" y2="-6%-6" fill="inherit" stroke-width="12"/>
+        </symbol>
+    </defs>
+  <!-- end symbols -->
+  
+    <g transform="translate(50%,50%)">
+        <use fill="white" href="#hour_marker"/>
+    </g>
+
+    <g id="batt_bars">
+        <rect width="40" height="20" x="1" y="1" fill="white" rx="2" ry="2"/>
+        <rect width="38" height="18" x="2" y="2" fill="black" rx="2" ry="2"/>
+        <rect id="batColor" width="38" height="18" x="2" y="2" fill="#0f9eb7" rx="2" ry="2"/>
+        <rect width="5" height="8" x="40" y="7" fill="white" rx="1" ry="1"/>
+        <rect width="3" height="6" x="41" y="8" fill="black" rx="1" ry="1"/>
+        <text id="batText" x="4" y="16" fill="#c3e78e" font-size="16">
+          50%
+        </text>
+     </g>
+
+    <g id="minutes" fill="white" class="color1" transform="translate(50%,50%)">
+        <use fill="inherit" href="#min_hand"/>
+    </g>
+    <g id="hours" transform="translate(50%,50%)">
+        <use fill="white" href="#hour_hand"/>
+    </g>
+    <g id="seconds" transform="translate(50%,50%)">
+        <line x1="0" x2="0" y1="8%" y2="-50%+3" fill="red" stroke-width="2" class="color1"/>
+    </g>
+    <text id="mydate" x="75%" y="16" fill="white" font-size="21" text-length="20">
+      50%
+    </text>
+    <text id="mytime" x="77%" y="37" fill="white" font-size="21" text-length="20">
+      50%
+    </text>
+  
+    <circle cx="50%" cy="50%" r="10" fill="red"/>
+    <circle cx="50%" cy="50%" r="6" fill="black"/>
+  
+    <image x="70%" y="85%" width="36" height="36" href="ico_cal.png" fill="#9a5a2c"/>
+    <text id="mycal" x="80%" y="95%" fill="white" font-size="21" text-length="20">
+      50%
+    </text>
+  
+    <image x="0%" y="85%" width="36" height="36" href="ico_steps.png" fill="#4dd6c1" />
+    <text id="mysteps" x="10%" y="95%" fill="white" font-size="21" text-length="20">
+      50%
+    </text>
+</svg>
