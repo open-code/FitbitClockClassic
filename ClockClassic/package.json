@@ -1,4 +1,7 @@
 {
+  "devDependencies": {
+    "@fitbit/sdk": "~4.2.0"
+  },
   "fitbit": {
     "appUUID": "5cd3d22e-5ff8-47dd-9cae-7d8ffa0d82dc",
     "appType": "clockface",
@@ -11,16 +14,16 @@
       "access_exercise"
     ],
     "buildTargets": [
+      "meson",
+      "gemini",
+      "mira",
       "higgs"
     ],
     "i18n": {
-      "en": {
+      "en-US": {
         "name": "ClockClassic"
       }
     },
     "defaultLanguage": "en-US"
-  },
-  "devDependencies": {
-    "@fitbit/sdk": "~4.1.0"
   }
 }
